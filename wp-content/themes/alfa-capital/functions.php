@@ -145,9 +145,21 @@ add_action( 'widgets_init', 'alfa_capital_widgets_init' );
 function alfa_capital_scripts() {
 	wp_enqueue_style( 'alfa-capital-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'alfa-capital-style', 'rtl', 'replace' );
+	wp_enqueue_style('alfa-capital-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css');
+	wp_enqueue_style('alfa-capital-custom', get_template_directory_uri() . '/assets/css/custom.css');
+	wp_enqueue_style('alfa-capital-normalize', get_template_directory_uri() . '/assets/css/normalize.css');
+	wp_enqueue_style('alfa-capital-slick-theme', get_template_directory_uri() . '/assets/css/slick-theme.css');
+	wp_enqueue_style('alfa-capital-slick', get_template_directory_uri() . '/assets/css/slick.css');
 
-	wp_enqueue_script( 'alfa-capital-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
+
+	wp_enqueue_script('deckkorate-jquery', 	'https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '20151215', true);
+	wp_enqueue_script( 'alfa-capital-bootstrapjs', get_template_directory_uri() . '/assets/js/bootstrap.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'alfa-capital-customjs', get_template_directory_uri() . '/assets/js/custom.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'alfa-capital-slickjs', get_template_directory_uri() . '/assets/js/slick.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'alfa-capital-html5lightbox', get_template_directory_uri() . '/assets/js/html5lightbox.js', array(), _S_VERSION, true );
+
+	
 	wp_enqueue_script( 'alfa-capital-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

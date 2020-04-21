@@ -34,29 +34,60 @@ $(function() {
 });
 
 
-$('.sl').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerPadding: '60px',
-    responsive: [{
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
+
+$(function() {
+    $('.sl').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerPadding: '60px',
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
             }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
+        ]
+    })
+});
+
+
+$(function() {
+    $('.sl_video').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerPadding: '60px',
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
             }
-        }
-    ]
+        ]
+    })
 });
 
 $('.sl_object').slick({

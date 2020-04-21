@@ -11,22 +11,48 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'alfa-capital' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'alfa-capital' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'alfa-capital' ), 'alfa-capital', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="footer_logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_2.svg" alt="ЛОготип для футера" />
+                </div>
+
+                <div class="col-md-2">
+                    <h6 class="footer_margin_top">Мы находимся</h6>
+                    <div class="footer_adress">
+                        <h6 class="footer_bold_heading">Бизнес центр «Avrora»</h6>
+                        <h6>​Игембердиева, 1а</h6>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2">
+                    <h6 class="footer_margin_top">Контактные данные </h6>
+                    <div class="footer_adress">
+                        <h6 class="footer_bold_heading">0 222 50 50 50</h6>
+                        <h6>alfacapital.kg@gmail.com</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-right">
+                    <ul class="footer__social__link">
+                       <a href="https://www.youtube.com/channel/UChtbHAOlHqmfKbUekjfPrLQ"> <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/youtube_logo.svg" alt="Социальные сети" /></li></a>
+                        <a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook_logo.svg" alt="Социальные сети" /></li></a>
+                        <a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram_logo.svg" alt="Социальные сети" /></li></a>
+                        <a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/telegram_logo.svg" alt="Социальные сети" /></li></a>
+                    </ul>
+                    <div class="footer_adress">
+                        <h6 class="footer_bold_heading">alfacapital.kg 2020 </h6>
+                        <h6>Все права защищены</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Футер -->
 
 <?php wp_footer(); ?>
 

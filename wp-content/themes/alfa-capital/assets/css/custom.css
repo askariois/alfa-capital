@@ -1,650 +1,757 @@
-    /* Общие стили */
-    
-    @font-face {
-        font-family: 'gothaproreg';
-        src: url('../fonts/gothaproreg.otf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'gothaprobol';
-        src: url('../fonts/gothaprobol.otf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    ul {
-        padding: 0;
-        list-style: none;
-        margin: 0;
-    }
-    
-    body {
-        scroll-behavior: auto;
-        font-family: 'gothaproreg';
-        color: #2c2f47;
-        background: #ffffff;
-    }
-    
-    .alls_left {
-        padding-left: 85px;
-    }
-    
-    .alls_left_blocks {
-        margin-left: 30px;
-    }
-    
-    p {
-        font-size: 18px;
-        line-height: 1.3;
-    }
-    
-    h1 {
-        font-family: 'gothaprobol';
-        font-size: 36px;
-        margin-bottom: 25px;
-    }
-    /* Общие стили */
-    /* Хедер */
-    
-    header {
-        padding-top: 30px;
-    }
-    
-    img.header_logo {
-        width: 35px;
-    }
-    
-    .header_first_block,
-    ul.header_menu,
-    .header_second_block {
-        display: flex;
-        align-items: center;
-    }
-    
-    .header_menu {
-        margin-right: 440px;
-    }
-    
-    .fixed .header_menu {
-     margin-right: 0px;
-    }
-    
-    header a {
-        color: #2c2f47;
-        text-decoration: none;
-    }
-    
-    header a:hover {
-        color: #2c2f47;
-        text-decoration: none;
-    }
-    
-    header a::before {
-        content: '';
-        position: relative;
-        display: block;
-        top: 0;
-        left: 0px;
-        width: 0px;
-        height: 6px;
-        border-top: 2px solid transparent;
-        transition: 2s;
-    }
-    
-    header a:hover::before {
-        content: '';
-        position: relative;
-        display: block;
-        top: 0;
-        left: 0px;
-        width: 54px;
-        height: 6px;
-        border-top: 2px solid #daab2b;
-        transition: 2s;
-    }
-    
-    .active a::before {
-        content: '';
-        position: relative;
-        display: block;
-        top: 0;
-        left: 0px;
-        width: 54px;
-        height: 6px;
-        border-top: 2px solid #daab2b;
-        transition: 2s;
-    }
-    
-    .fixed a:hover {
-        color: white!important;
-    }
-    
-    .header_second_block {
-        justify-content: flex-end;
-    }
-    
-    .header_second_block img {
-        width: 15px;
-    }
-    
-    .header_second_block p {
-        font-family: 'gothaprobol';
-        margin: 0;
-        font-size: 18px;
-        margin: 0 10px;
-    }
-    
-    .header_second_block select {
-        background: #2c2f47;
-        color: white;
-        font-size: 12px;
-        font-weight: bold;
-        border: none;
-        margin-left: 10px;
-        padding: 3px 0;
-    }
-    
-    .fixed .header_second_block select {
-        background: white;
-        color: #2c2f47;
-    }
-    
-    ul.header_menu li {
-        margin-left: 20px;
-        font-size: 12px;
-    }
-    
-    .fixed {
-        position: fixed;
-        background: #272b46;
-        top: 0;
-        left: 0;
-        opacity: 1;
-        transition: 1s;
-        z-index: 9999;
-        padding: 20px 0;
-    }
-    
-    .fixed a {
-        color: white;
-    }
-    
-    .header_logo_fixed {
-        width: 210px;
-        margin-right: auto;
-        display: none;
-    }
-    
-    .header_burger {
-        display: none;
-    }
-    /* Хедер */
-    /* Баннер */
-    
-    .baner {
-        background-image: url(../img/cover.png);
-        background-size: cover;
-        height: 100vh;
-        margin-top: -90px;
-        padding-top: 180px;
-    }
-    
-    .baner h1 {
-        font-size: 54px;
-        font-family: 'gothaprobol';
-    }
-    
-    .baner p {
-        background: #daab2b;
-        color: white;
-        padding: 25px;
-    }
-    /* Баннер */
-    /* О компании */
-    
-    .company,
-    .comand,
-    .about_us,
-    .factory,
-    .object,
-    .news,
-    .contact,
-    .map {
-        margin-top: 100px;
-    }
-    
-    p.company_text_block {
-        margin: 0;
-    }
-    
-    .company ul {
-        list-style-image: url(../img/company_icon.png);
-        padding-left: 20px;
-        font-size: 18px;
-        line-height: 1.3;
-            margin-top: 20px;
-    }
-    /* О компании */
-    /* Наша миссия   Наш основной принцип - */
-    
-    .our_target {
-        margin-top: 60px;
-    }
-    
-    .our_target_header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    
-    .our_target_header img {
-        width: 95px;
-    }
-    
-    .our_target_header h1 {
-        margin-bottom: 10px;
-        line-height: 0.9;
-    }
-    
-    .our_target p {
-        margin-top: 35px;
-    }
-    /* Наша миссия   Наш основной принцип - */
-    /* Наша команда */
-    
-    .comand_colllumn {
-        display: flex;
-        align-items: flex-end;
-        margin-top: 90px;
-        background: #f0efee;
-        height: 130px;
-    }
-    
-    .comand_colllumn img {
-        width: 190px;
-    }
-    
-    .comand_colllumn_name {
-        margin-left: 37px;
-        margin-bottom: 40px;
-    }
-    
-    .comand_colllumn_name p {
-        font-family: 'gothaprobol';
-        width: 80px;
-        margin: 0;
-    }
-    
-    .comand_colllumn_name span {
-        font-size: 15px;
-    }
-    /* Наша команда */
-    /* Корпоративное видео */
-    
-    .video img {
-        width: 100%;
-        margin-top: 80px;
-    }
-    /* Корпоративное видео */
-    /*  О нас */
-    
-    .about_us_slider {
-        background: #f0efee;
-        padding: 35px;
-        height: 430px;
-    }
-    
-    .sl_slide {
-        padding: 0 15px;
-    }
-    
-    .sl_slide p {
-        font-family: 'gothaprobol';
-        height: 45px;
-    }
-    
-    .sl,
-    .sl_object {
-        visibility: hidden;
-    }
-    
-    .sl.slick-initialized.slick-slider,
-    .sl_object.slick-initialized.slick-slider {
-        visibility: visible!important;
-    }
-    
-    .object img {
-        width: 100%;
-    }
-    
-    .object .about_us_slider {
-        padding: 25px!important;
-    }
-    /*  О нас */
-    /* Факторы успеха */
-    
-    .factory p {
-        font-family: 'gothaprobol';
-    }
-    
-    .factory span {
-        font-size: 15px;
-        line-height: 1.3;
-        display: block;
-        margin-top: 20px;
-    }
-    
-    .factory_otstup {
-        margin-top: 60px;
-    }
-    /* Факторы успеха */
-    /* Инвестируем в объекты */
-    
-    .sl_object {
-        text-align: centerc;
-    }
-    
-    .sl_object img {
-        width: 120px;
-    }
-    
-    .sl_object img {
-        width: 120px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .object a:hover .about_us_slider {
-        background: #2c2f47;
-        transition: 1s;
-    }
-    
-    .object a:hover img {
-        filter: brightness(0) invert(1);
-        transition: 1s;
-    }
-    
-    .object .about_us_slider {
-        background: #f0efee;
-        padding: 35px;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-        transition: 1s;
-    }
-    /* Инвестируем в объекты */
-    /* Контакты */
-    
-    .contact p {
-        margin: 0;
-    }
-    
-    .contact_bold_heading {
-        font-family: 'gothaprobol';
-    }
-    
-    .contact_phone_mail {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-    }
-    
-    .contact input {
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 5px 20px;
-        background: #f0efee;
-        border: 0;
-    }
-    
-    .send-btn {
-        background: #daab2b!important;
-        color: white;
-    }
-    
-    .contact_form {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .contact_form input {
-        width: 245px;
-    }
-    /* Контакты */
-    /* футер */
-    
-    footer {
-        background: #272b46;
-        padding: 20px 0;
-        margin-top: -10px;
-    }
-    
-    img.footer_logo {
-        width: 200px;
-    }
-    
-    footer h6 {
-        color: white;
-        font-size: 13px;
-    }
-    
-    .footer_margin_top {
-        margin: 15px 0 20px 0;
-    }
-    
-    .footer_bold_heading {
-        font-family: 'gothaprobol';
-        margin-bottom: 3px;
-    }
-    
-    footer ul {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 12px;
-        margin-top: 15px;
-    }
-    
-    footer ul img {
-        width: 18px;
-        margin-left: 10px;
-    }
-    /* футер */
-    /* Мобильная версия */
-    
-    @media (max-width: 1200px) {
-        .baner h1 {
-            font-size: 32px;
-        }
-        p {
-            font-size: 16px;
-        }
-    }
-    
-    @media (max-width: 960px) {
-        .alls_left {
-            padding-left: 10px;
-        }
-        .baner h1 {
-            font-size: 30px;
-        }
-        
-        .our_target_header  p{
-            font-size:18px;
-        }
-        p , li, span{
-            font-size: 14px;
-            line-height: 1.3;
-        }
-        .baner {
-            background-image: url(../img/cover_mob.png);
-            background-position-y: bottom;
-            padding-top: 130px;
-        }
-        .about_us_slider {
-            height: auto;
-            word-break: break-word;
-        }
-        .object img {
-            width: 100%;
-        }
-        /* Мобильное меню бургер */
-        .header_burger {
-            display: block;
-            position: relative;
-            width: 30px;
-            height: 20px;
-            z-index: 101;
-        }
-        .header_burger span {
-            position: absolute;
-            background-color: #272b46;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            top: 9px;
-            transition: all 0.3s ease 0s;
-        }
-        .header_burger:before,
-        .header_burger:after {
-            content: '';
-            background-color: #272b46;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            left: 0;
-            transition: all 0.3s ease 0s;
-        }
-        .header_burger:before {
-            top: 0;
-        }
-        .header_burger::after {
-            bottom: 0;
-        }
-        .header_burger.active_menu:after {
-            transform: rotate(45deg);
-            top: 9px;
-        }
-        .header_burger.active_menu:before {
-            transform: rotate(-45deg);
-            top: 9px;
-        }
-        .header_burger.active_menu span {
-            transform: scale(0);
-        }
-        ul.header_menu {
-            position: fixed;
-            text-align: center;
-            top: -100%;
-            left: 0;
-            width: 100%;
-            height: auto;
-            background: #272b46;
-            padding: 75px 0 10px 0;
-            overflow: auto;
-            margin: 0;
-            z-index: 99;
-            display: block;
-            transition: all 0.5s ease 0s;
-        }
-        ul.header_menu li {
-        margin-left: 0px;
-        }
-        ul.header_menu.active_menu {
-            top: 0;
-            transition: all 0.5s ease 0s;
-        }
-        ul.header_menu a {
-            font-size: 18px;
-            color: #ffffff;
-        }
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 102%;
-            height: 70px;
-            background: #ffffff;
-            z-index: 100;
-        }
-        header {
-            padding: 5px;
-        }
-        img.header_logo,
-        .header_second_block {
-            z-index: 101;
-        }
-        .fixed {
-            padding: 20px;
-        }
-        /* Мобильное меню бургер */
-        /* Мобильное меню бургер При фиксированном меню */
-        header.fixed::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 70px;
-            background: #272b46;
-            z-index: 100;
-        }
-        .header_logo_fixed {
-            width: 155px;
-            margin-right: auto;
-            z-index: 101;
-        }
-        .fixed .header_burger {
-            margin-left: 10px;
-        }
-        .fixed .header_burger span {
-            position: absolute;
-            background-color: #ffffff;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            top: 9px;
-            transition: all 0.3s ease 0s;
-        }
-        .fixed .header_burger:before,
-        .fixed .header_burger:after {
-            content: '';
-            background-color: #ffffff;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            left: 0;
-            transition: all 0.3s ease 0s;
-        }
-        /* Мобильное меню бургер При фиксированном меню */
-    }
-    
-    @media (max-width: 768px) {
-        .baner {
-            background-image: url(../img/cover_mob.png);
-            background-position-y: bottom;
-            padding-top: 300px;
-        }
-        .header_second_block {
-            display: none;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .contact input {
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 5px 20px;
-            background: #f0efee;
-            border: 0;
-            margin-top: 20px;
-        }
-        .contact_form {
-            flex-direction: column;
-        }
-    }
-    /* Мобильная версия */
+            /* Общие стили */
+            
+            @font-face {
+                font-family: 'gothaproreg';
+                src: url('../fonts/gothaproreg.otf');
+                font-weight: normal;
+                font-style: normal;
+            }
+            
+            @font-face {
+                font-family: 'gothaprobol';
+                src: url('../fonts/gothaprobol.otf');
+                font-weight: normal;
+                font-style: normal;
+            }
+            
+            ul {
+                padding: 0;
+                list-style: none;
+                margin: 0;
+            }
+            
+            body {
+                scroll-behavior: auto;
+                font-family: 'gothaproreg';
+                color: #2c2f47;
+                background: #ffffff;
+            }
+            
+            .alls_left {
+                padding-left: 85px;
+            }
+            
+            .alls_left_blocks {
+                margin-left: 30px;
+            }
+            
+            p {
+                font-size: 18px;
+                line-height: 1.3;
+            }
+            
+            h1 {
+                font-family: 'gothaprobol';
+                font-size: 36px;
+                margin-bottom: 25px;
+            }
+            /* Общие стили */
+            /* Хедер */
+            
+            header {
+                padding-top: 30px;
+            }
+            
+            img.header_logo {
+                width: 35px;
+            }
+            
+            .header_first_block,
+            ul.header_menu,
+            .header_second_block {
+                display: flex;
+                align-items: center;
+            }
+            
+            .header_menu {
+                margin-right: 440px;
+            }
+            
+            .fixed .header_menu {
+                margin-right: 0px;
+            }
+            
+            header a {
+                color: #2c2f47;
+                text-decoration: none;
+            }
+            
+            header a:hover {
+                color: #2c2f47;
+                text-decoration: none;
+            }
+            
+            header a::before {
+                content: '';
+                position: relative;
+                display: block;
+                top: 0;
+                left: 0px;
+                width: 0px;
+                height: 6px;
+                border-top: 2px solid transparent;
+                transition: 2s;
+            }
+            
+            header a:hover::before {
+                content: '';
+                position: relative;
+                display: block;
+                top: 0;
+                left: 0px;
+                width: 54px;
+                height: 6px;
+                border-top: 2px solid #daab2b;
+                transition: 2s;
+            }
+            
+            .active a::before {
+                content: '';
+                position: relative;
+                display: block;
+                top: 0;
+                left: 0px;
+                width: 54px;
+                height: 6px;
+                border-top: 2px solid #daab2b;
+                transition: 2s;
+            }
+            
+            .fixed a:hover {
+                color: white!important;
+            }
+            
+            .header_second_block {
+                justify-content: flex-end;
+            }
+            
+            .header_second_block img {
+                width: 15px;
+            }
+            
+            .header_second_block p {
+                font-family: 'gothaprobol';
+                margin: 0;
+                font-size: 18px;
+                margin: 0 10px;
+            }
+            
+            .header_second_block select {
+                background: #2c2f47;
+                color: white;
+                font-size: 12px;
+                font-weight: bold;
+                border: none;
+                margin-left: 10px;
+                padding: 3px 0;
+            }
+            
+            .fixed .header_second_block select {
+                background: white;
+                color: #2c2f47;
+            }
+            
+            ul.header_menu li {
+                margin-left: 20px;
+                font-size: 12px;
+            }
+            
+            .fixed {
+                position: fixed;
+                background: #272b46;
+                top: 0;
+                left: 0;
+                opacity: 1;
+                transition: 1s;
+                z-index: 9999;
+                padding: 20px 0;
+            }
+            
+            .fixed a {
+                color: white;
+            }
+            
+            .header_logo_fixed {
+                width: 210px;
+                margin-right: auto;
+                display: none;
+            }
+            
+            .header_burger {
+                display: none;
+            }
+            /* Хедер */
+            /* Баннер */
+            
+            .baner {
+                background-image: url(../img/cover.png);
+                background-size: cover;
+                height: 100vh;
+                margin-top: -90px;
+                padding-top: 180px;
+            }
+            
+            .baner h1 {
+                font-size: 54px;
+                font-family: 'gothaprobol';
+            }
+            
+            .baner p {
+                background: #daab2b;
+                color: white;
+                padding: 25px;
+            }
+            /* Баннер */
+            /* О компании */
+            
+            .company,
+            .comand,
+            .about_us,
+            .factory,
+            .object,
+            .news,
+            .contact,
+            .map,
+            .video {
+                margin-top: 100px;
+            }
+            
+            p.company_text_block {
+                margin: 0;
+            }
+            
+            .company ul {
+                list-style-image: url(../img/company_icon.png);
+                padding-left: 20px;
+                font-size: 18px;
+                line-height: 1.3;
+                margin-top: 20px;
+            }
+            /* О компании */
+            /* Наша миссия   Наш основной принцип - */
+            
+            .our_target {
+                margin-top: 60px;
+            }
+            
+            .our_target_header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            
+            .our_target_header img {
+                width: 95px;
+            }
+            
+            .our_target_header h1 {
+                margin-bottom: 10px;
+                line-height: 0.9;
+            }
+            
+            .our_target p {
+                margin-top: 35px;
+            }
+            /* Наша миссия   Наш основной принцип - */
+            /* Наша команда */
+            
+            .comand_colllumn {
+                display: flex;
+                align-items: flex-end;
+                margin-top: 90px;
+                background: #f0efee;
+                height: 130px;
+            }
+            
+            .comand_colllumn img {
+                width: 190px;
+            }
+            
+            .comand_colllumn_name {
+                margin-left: 37px;
+                margin-bottom: 40px;
+            }
+            
+            .comand_colllumn_name p {
+                font-family: 'gothaprobol';
+                width: 80px;
+                margin: 0;
+            }
+            
+            .comand_colllumn_name span {
+                font-size: 15px;
+            }
+            /* Наша команда */
+            /* Корпоративное видео */
+            
+            .video img {
+                width: 100%;
+            }
+            
+            .video_desc {
+                background: #f0efee;
+                padding: 20px 40px;
+            }
+            
+            .video_desc h5 {
+                font-family: 'gothaprobol';
+                margin: 0;
+                color: #2c2f47;
+            }
+            
+            a:hover {
+                text-decoration: none;
+            }
+            
+            .video_desc span {
+                color: #2c2f47;
+            }
+            
+            #html5-watermark {
+                display: none!important;
+            }
+            
+            .sl_slide_video a,
+            .sl_slide_video a>span {
+                position: relative;
+                color: inherit;
+                text-decoration: none;
+                line-height: 24px;
+            }
+            
+            .sl_slide_video a:before,
+            .sl_slide_video a:after,
+            .sl_slide_video a>span:before,
+            .sl_slide_video a>span:after {
+                content: '';
+                position: absolute;
+                transition: transform .5s ease;
+            }
+            
+            .effect-5 {
+                display: inline-block;
+                overflow: hidden;
+            }
+            
+            .effect-5:before,
+            .effect-5:after {
+                right: 0;
+                bottom: 0;
+                background: #2c2f47;
+            }
+            
+            .effect-5:before {
+                width: 100%;
+                height: 5px;
+                transform: translateX(-100%);
+                z-index: 9999;
+            }
+            
+            .effect-5:after {
+                width: 5px;
+                height: 100%;
+                transform: translateY(100%);
+                z-index: 999;
+            }
+            
+            .effect-5>span {
+                display: block;
+            }
+            
+            .effect-5>span:before,
+            .effect-5>span:after {
+                left: 0;
+                top: 0;
+                background: #2c2f47;
+            }
+            
+            .effect-5>span:before {
+                width: 100%;
+                height: 5px;
+                transform: translateX(100%);
+            }
+            
+            .effect-5>span:after {
+                width: 5px;
+                height: 100%;
+                transform: translateY(-100%);
+            }
+            
+            .effect-5:hover:before,
+            .effect-5:hover:after,
+            .effect-5:hover>span:before,
+            .effect-5:hover>span:after {
+                transform: translate(0, 0);
+            }
+            /* Корпоративное видео */
+            /*  О нас */
+            
+            .about_us_slider {
+                background: #f0efee;
+                padding: 35px;
+                height: 430px;
+            }
+            
+            .sl_slide,
+            .sl_slide_video {
+                padding: 0 15px;
+            }
+            
+            .sl_slide p {
+                font-family: 'gothaprobol';
+                height: 45px;
+            }
+            
+            .sl,
+            .sl_object {
+                visibility: hidden;
+            }
+            
+            .sl.slick-initialized.slick-slider,
+            .sl_object.slick-initialized.slick-slider {
+                visibility: visible!important;
+            }
+            
+            .object img {
+                width: 100%;
+            }
+            
+            .object .about_us_slider {
+                padding: 25px!important;
+            }
+            /*  О нас */
+            /* Факторы успеха */
+            
+            .factory p {
+                font-family: 'gothaprobol';
+            }
+            
+            .factory span {
+                font-size: 15px;
+                line-height: 1.3;
+                display: block;
+                margin-top: 20px;
+            }
+            
+            .factory_otstup {
+                margin-top: 60px;
+            }
+            /* Факторы успеха */
+            /* Инвестируем в объекты */
+            
+            .sl_object {
+                text-align: centerc;
+            }
+            
+            .sl_object img {
+                width: 120px;
+            }
+            
+            .sl_object img {
+                width: 120px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .object a:hover .about_us_slider {
+                background: #2c2f47;
+                transition: 1s;
+            }
+            
+            .object a:hover img {
+                filter: brightness(0) invert(1);
+                transition: 1s;
+            }
+            
+            .object .about_us_slider {
+                background: #f0efee;
+                padding: 35px;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                transition: 1s;
+            }
+            /* Инвестируем в объекты */
+            /* Контакты */
+            
+            .contact p {
+                margin: 0;
+            }
+            
+            .contact_bold_heading {
+                font-family: 'gothaprobol';
+            }
+            
+            .contact_phone_mail {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+            
+            .contact input {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 5px 20px;
+                background: #f0efee;
+                border: 0;
+            }
+            
+            .send-btn {
+                background: #daab2b!important;
+                color: white;
+            }
+            
+            .contact_form {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .contact_form input {
+                width: 245px;
+            }
+            /* Контакты */
+            /* футер */
+            
+            footer {
+                background: #272b46;
+                padding: 20px 0;
+                margin-top: -10px;
+            }
+            
+            img.footer_logo {
+                width: 200px;
+            }
+            
+            footer h6 {
+                color: white;
+                font-size: 13px;
+            }
+            
+            .footer_margin_top {
+                margin: 15px 0 20px 0;
+            }
+            
+            .footer_bold_heading {
+                font-family: 'gothaprobol';
+                margin-bottom: 3px;
+            }
+            
+            footer ul {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 12px;
+                margin-top: 15px;
+            }
+            
+            footer ul img {
+                width: 18px;
+                margin-left: 10px;
+            }
+            
+            .footer__social__link a {
+                transition: 1s;
+            }
+            
+            .footer__social__link a:hover img {
+                filter: brightness(0.5);
+                transition: 1s;
+            }
+            /* футер */
+            /* Мобильная версия */
+            
+            @media (max-width: 1200px) {
+                .baner h1 {
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+            
+            @media (max-width: 960px) {
+                .alls_left {
+                    padding-left: 10px;
+                }
+                .baner h1 {
+                    font-size: 30px;
+                }
+                .our_target_header p {
+                    font-size: 18px;
+                }
+                p,
+                li,
+                span {
+                    font-size: 14px;
+                    line-height: 1.3;
+                }
+                .baner {
+                    background-image: url(../img/cover_mob.png);
+                    background-position-y: bottom;
+                    padding-top: 130px;
+                }
+                .about_us_slider {
+                    height: auto;
+                    word-break: break-word;
+                }
+                .object img {
+                    width: 100%;
+                }
+                /* Мобильное меню бургер */
+                .header_burger {
+                    display: block;
+                    position: relative;
+                    width: 30px;
+                    height: 20px;
+                    z-index: 101;
+                }
+                .header_burger span {
+                    position: absolute;
+                    background-color: #272b46;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    top: 9px;
+                    transition: all 0.3s ease 0s;
+                }
+                .header_burger:before,
+                .header_burger:after {
+                    content: '';
+                    background-color: #272b46;
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    left: 0;
+                    transition: all 0.3s ease 0s;
+                }
+                .header_burger:before {
+                    top: 0;
+                }
+                .header_burger::after {
+                    bottom: 0;
+                }
+                .header_burger.active_menu:after {
+                    transform: rotate(45deg);
+                    top: 9px;
+                }
+                .header_burger.active_menu:before {
+                    transform: rotate(-45deg);
+                    top: 9px;
+                }
+                .header_burger.active_menu span {
+                    transform: scale(0);
+                }
+                ul.header_menu {
+                    position: fixed;
+                    text-align: center;
+                    top: -100%;
+                    left: 0;
+                    width: 100%;
+                    height: auto;
+                    background: #272b46;
+                    padding: 75px 0 10px 0;
+                    overflow: auto;
+                    margin: 0;
+                    z-index: 99;
+                    display: block;
+                    transition: all 0.5s ease 0s;
+                }
+                ul.header_menu li {
+                    margin-left: 0px;
+                }
+                ul.header_menu.active_menu {
+                    top: 0;
+                    transition: all 0.5s ease 0s;
+                }
+                ul.header_menu a {
+                    font-size: 18px;
+                    color: #ffffff;
+                }
+                header::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 102%;
+                    height: 70px;
+                    background: #ffffff;
+                    z-index: 100;
+                }
+                header {
+                    padding: 5px;
+                }
+                img.header_logo,
+                .header_second_block {
+                    z-index: 101;
+                }
+                .fixed {
+                    padding: 20px;
+                }
+                /* Мобильное меню бургер */
+                /* Мобильное меню бургер При фиксированном меню */
+                header.fixed::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 70px;
+                    background: #272b46;
+                    z-index: 100;
+                }
+                .header_logo_fixed {
+                    width: 155px;
+                    margin-right: auto;
+                    z-index: 101;
+                }
+                .fixed .header_burger {
+                    margin-left: 10px;
+                }
+                .fixed .header_burger span {
+                    position: absolute;
+                    background-color: #ffffff;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    top: 9px;
+                    transition: all 0.3s ease 0s;
+                }
+                .fixed .header_burger:before,
+                .fixed .header_burger:after {
+                    content: '';
+                    background-color: #ffffff;
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    left: 0;
+                    transition: all 0.3s ease 0s;
+                }
+                /* Мобильное меню бургер При фиксированном меню */
+            }
+            
+            @media (max-width: 768px) {
+                .baner {
+                    background-image: url(../img/cover_mob.png);
+                    background-position-y: bottom;
+                    padding-top: 300px;
+                }
+                .header_second_block {
+                    display: none;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .contact input {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding: 5px 20px;
+                    background: #f0efee;
+                    border: 0;
+                    margin-top: 20px;
+                }
+                .contact_form {
+                    flex-direction: column;
+                }
+            }
+            /* Мобильная версия */
